@@ -9,17 +9,17 @@ url = 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/Cadastral/Parcels/Madison
 
 url_dict = {
     '1' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/Cadastral/Parcels/Madison/Madison_GDB.zip',
-    '2' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/Cadastral/Parcels/Madison/Madison_GDB.shp'
+    '2' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/Cadastral/Parcels/Madison/Madison_SHP.zip'
 }
 
 def main():
     layer_choice = input('Enter 1 for Parcel GDB\nEnter 2 for Parcel SHP\n')
 
     for key in url_dict:
-        print(key, url_dict[key])
-        #if keys == layer_choice:
-        #    url = vals
-        #    print(url) 
+        #print(key, url_dict[key])
+        if key == layer_choice:
+            url = url_dict[key]
+            print(url) 
 
     print('Current Directory: %s' % cwd)
     r = requests.get(url)
