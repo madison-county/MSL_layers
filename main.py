@@ -17,7 +17,6 @@ def main():
     for key in url_dict:
         if key == layer_choice:
             url = url_dict[key]
-            print(url) 
 
     try:
         r = requests.get(url)
