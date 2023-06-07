@@ -5,7 +5,6 @@ import os
 
 
 cwd = os.getcwd()
-url = 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/Cadastral/Parcels/Madison/Madison_GDB.zip'
 
 url_dict = {
     '1' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/Cadastral/Parcels/Madison/Madison_GDB.zip',
@@ -20,10 +19,13 @@ def main():
             url = url_dict[key]
             print(url) 
 
-    print('Current Directory: %s' % cwd)
-    r = requests.get(url)
-    z = zipfile.ZipFile(io.BytesIO(r.content))
-    z.extractall()
+    try:
+        print('Current Directory: %s' % cwd)
+        r = requests.get(url)
+        z = zipfile.ZipFile(io.BytesIO(r.content))
+        z.extractall()
+    except UnboundLocalError as e:
+        print('Error - Incorrect input: %s' % e)
 
 if __name__ == '__main__':
     main()
