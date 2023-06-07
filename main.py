@@ -12,7 +12,7 @@ url_dict = {
 }
 
 def main():
-    layer_choice = input('Enter 1 for Parcel GDB\nEnter 2 for Parcel SHP\n')
+    layer_choice = input('Enter 1 for Parcel GDB\nEnter 2 for Parcel SHP\nOr type "h" for help.\n')
 
     for key in url_dict:
         if key == layer_choice:
@@ -25,6 +25,8 @@ def main():
         z.extractall()
     except UnboundLocalError as e:
         print('Error - Incorrect input: %s' % e)
+    except Exception as e:
+        print('General exception caught: %s' % e)
 
 if __name__ == '__main__':
     main()
