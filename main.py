@@ -15,6 +15,12 @@ url_dict = {
 def main():
     layer_choice = input('Enter 1 for Parcel GDB\nEnter 2 for Parcel SHP\n')
 
+    for key in url_dict:
+        print(key, url_dict[key])
+        #if keys == layer_choice:
+        #    url = vals
+        #    print(url) 
+
     print('Current Directory: %s' % cwd)
     r = requests.get(url)
     z = zipfile.ZipFile(io.BytesIO(r.content))
