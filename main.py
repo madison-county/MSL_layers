@@ -16,7 +16,6 @@ def main():
     layer_choice = input('Enter 1 for Parcel GDB\nEnter 2 for Parcel SHP\n')
 
     for key in url_dict:
-        #print(key, url_dict[key])
         if key == layer_choice:
             url = url_dict[key]
             print(url) 
