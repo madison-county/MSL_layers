@@ -1,11 +1,11 @@
 import requests
 import zipfile
-import StringIO
+import io
 
 url = 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/Cadastral/Parcels/Madison/Madison_GDB.zip'
 
 def main():
-    x = requests.post(url)
+    r = requests.get(url)
 
 if __name__ == '__main__':
     main()
