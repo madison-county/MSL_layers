@@ -20,7 +20,6 @@ def main():
             print(url) 
 
     try:
-        print('Current Directory: %s' % cwd)
         r = requests.get(url)
         z = zipfile.ZipFile(io.BytesIO(r.content))
         z.extractall()
