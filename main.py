@@ -7,7 +7,8 @@ cwd = os.getcwd()
 
 url_dict = {
     '1' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/Cadastral/Parcels/Madison/Madison_GDB.zip',
-    '2' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/Cadastral/Parcels/Madison/Madison_SHP.zip'
+    '2' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/Cadastral/Parcels/Madison/Madison_SHP.zip',
+    '3' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/Hydrography/NHDH_MT_Shape_20221025.zip'
 }
 
 def main():
