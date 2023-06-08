@@ -14,6 +14,7 @@ def main():
     layer_choice = input('Enter 1 for Parcel GDB\nEnter 2 for Parcel SHP\nOr type "h" for help.\n')
     valid_input = False
 
+    while not valid_input:
     for key in url_dict:
         if key == layer_choice:
             url = url_dict[key]
