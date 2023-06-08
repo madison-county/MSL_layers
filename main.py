@@ -11,21 +11,26 @@ url_dict = {
 }
 
 def main():
-    layer_choice = input('Enter 1 for Parcel GDB\nEnter 2 for Parcel SHP\nOr type "h" for help.\n')
+
     valid_input = False
 
     while not valid_input:
-    for key in url_dict:
-        if key == layer_choice:
-            url = url_dict[key]
-    try:
-        r = requests.get(url)
-        z = zipfile.ZipFile(io.BytesIO(r.content))
-        z.extractall()
-    except UnboundLocalError as e:
-        print('Error - Incorrect input: %s' % e)
-    except Exception as e:
-        print('General exception caught: %s' % e)
+        layer_choice = input('Enter 1 for Parcel GDB\nEnter 2 for Parcel SHP\nOr type "h" for help.\n(Ctrl + C to exit runtime.\n)')
+        try:
+            for key in url_dict:
+                if key == layer_choice:
+                    url = url_dict[key]
+                    #valid_input = True
+                    print('Retrieving Data Layer at: \n %s' % url)
+                    r = requests.get(url)
+                    z = zipfile.ZipFile(io.BytesIO(r.content))
+                    z.extractall()
+                elif layer_choice.lower() == 'h':
+                    print ('1 for Parcel Data GDB\n2 for Parcel Data SHP.\n')
+        except UnboundLocalError as e:
+            print('Error - Incorrect input: %s' % e)
+        except Exception as e:
+            print('General exception caught: %s' % e)
 
 if __name__ == '__main__':
     main()
