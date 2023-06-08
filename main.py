@@ -38,7 +38,7 @@ def main():
             print('General exception caught: %s' % e)
 
 def help_prompt():
-    print('Enter 1 for Parcel GDB\nEnter 2 for Parcel SHP\nOr type "h" for help.\n(Ctrl + C to exit runtime.)\n')
+    print('1 for Parcel GDB\n2 for Parcel SHP\n3 For Hydrography SHP\nOr type "h" for help.\n(Ctrl + C to exit runtime.)\n')
 
 if __name__ == '__main__':
     main()
