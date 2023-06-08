@@ -25,8 +25,8 @@ def main():
                     r = requests.get(url)
                     z = zipfile.ZipFile(io.BytesIO(r.content))
                     z.extractall()
-                elif layer_choice.lower() == 'h':
-                    print ('1 for Parcel Data GDB\n2 for Parcel Data SHP.\n')
+            if layer_choice.lower() == 'h':
+                print ('1 for Parcel Data GDB\n2 for Parcel Data SHP.\n')
         except UnboundLocalError as e:
             print('Error - Incorrect input: %s' % e)
         except Exception as e:
