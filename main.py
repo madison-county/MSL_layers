@@ -19,7 +19,7 @@ def main():
         layer_choice = input('\n')
         try:
             if layer_choice.lower() == 'h':
-                print ('1 for Parcel Data GDB\n2 for Parcel Data SHP.\n')
+                help_prompt()
 
             for key in url_dict:
                 if key == layer_choice:
