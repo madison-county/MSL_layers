@@ -9,7 +9,7 @@ url_dict = {
     '1' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/Cadastral/Parcels/Madison/Madison_GDB.zip',
     '2' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/Cadastral/Parcels/Madison/Madison_SHP.zip',
     '3' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/Hydrography/NHDH_MT_Shape_20221025.zip',
-    '4' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/NonMSDI/Wells/GWIC_well.gdb.zip',
+    '4' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/NonMSDI/Wells/GWIC_wells.gdb.zip',
     '5' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/NonMSDI/Wells/GWIC_wells.shp.zip'
 }
 
