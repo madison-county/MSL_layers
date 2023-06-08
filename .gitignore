@@ -1,3 +1,7 @@
+*.xlsx
+*.xml
+*.txt
+*.pdf
 Madison_Parcels.gdb
 Madison_Parcels
 NHDH_MT_Shape_20221025
