@@ -3,7 +3,6 @@ import zipfile
 import io
 import os
 
-
 cwd = os.getcwd()
 
 url_dict = {
@@ -17,7 +16,6 @@ def main():
     for key in url_dict:
         if key == layer_choice:
             url = url_dict[key]
-
     try:
         r = requests.get(url)
         z = zipfile.ZipFile(io.BytesIO(r.content))
