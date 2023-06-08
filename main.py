@@ -35,5 +35,8 @@ def main():
         except Exception as e:
             print('General exception caught: %s' % e)
 
+def help_prompt():
+    pass
+
 if __name__ == '__main__':
     main()
