@@ -14,8 +14,9 @@ def main():
 
     valid_input = False
 
+    print('Enter 1 for Parcel GDB\nEnter 2 for Parcel SHP\nOr type "h" for help.\n(Ctrl + C to exit runtime.)\n')
     while not valid_input:
-        layer_choice = input('Enter 1 for Parcel GDB\nEnter 2 for Parcel SHP\nOr type "h" for help.\n(Ctrl + C to exit runtime.)\n')
+        layer_choice = input('\n')
         try:
             if layer_choice.lower() == 'h':
                 print ('1 for Parcel Data GDB\n2 for Parcel Data SHP.\n')
@@ -28,7 +29,7 @@ def main():
                     r = requests.get(url)
                     z = zipfile.ZipFile(io.BytesIO(r.content))
                     z.extractall()
-                    
+
         except UnboundLocalError as e:
             print('Error - Incorrect input: %s' % e)
         except Exception as e:
