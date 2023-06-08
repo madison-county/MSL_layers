@@ -14,7 +14,7 @@ def main():
 
     valid_input = False
 
-    print('Enter 1 for Parcel GDB\nEnter 2 for Parcel SHP\nOr type "h" for help.\n(Ctrl + C to exit runtime.)\n')
+    help_prompt()
     while not valid_input:
         layer_choice = input('\n')
         try:
@@ -29,6 +29,7 @@ def main():
                     r = requests.get(url)
                     z = zipfile.ZipFile(io.BytesIO(r.content))
                     z.extractall()
+                    print('Layer downloaded')
 
         except UnboundLocalError as e:
             print('Error - Incorrect input: %s' % e)
