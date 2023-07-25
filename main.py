@@ -5,18 +5,18 @@ import os
 
 cwd = os.getcwd()
 
-MSDI_PATH = 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/'
-NON_MSDI_PATH = 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/NonMSDI/'
+MSDI_PATH = 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI'
+NON_MSDI_PATH = 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/NonMSDI'
 
 url_dict = {
-    '1' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/Cadastral/Parcels/Madison/Madison_GDB.zip',
-    '2' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/Cadastral/Parcels/Madison/Madison_SHP.zip',
-    '3' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/Hydrography/NHDH_MT_Shape_20221025.zip',
-    '4' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/NonMSDI/Wells/GWIC_wells.gdb.zip',
-    '5' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/NonMSDI/Wells/GWIC_wells.shp.zip',
-    '6' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/Imagery/2021_NAIP/UTM_County_Mosaics/Madison.sid',
-    '7' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/Wetlands/MontanaWetlandRiparian_GDB.zip',
-    '8' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/Wetlands/MontanaWetlandRiparian_SHP.zip'
+    '1' : f'{MSDI_PATH}/Cadastral/Parcels/Madison/Madison_GDB.zip',
+    '2' : f'{MSDI_PATH}/Cadastral/Parcels/Madison/Madison_SHP.zip',
+    '3' : f'{MSDI_PATH}/Hydrography/NHDH_MT_Shape_20221025.zip',
+    '4' : f'{NON_MSDI_PATH}/Wells/GWIC_wells.gdb.zip',
+    '5' : f'{NON_MSDI_PATH}/Wells/GWIC_wells.shp.zip',
+    '6' : f'{MSDI_PATH}/Imagery/2021_NAIP/UTM_County_Mosaics/Madison.sid',
+    '7' : f'{MSDI_PATH}/Wetlands/MontanaWetlandRiparian_GDB.zip',
+    '8' : f'{MSDI_PATH}/Wetlands/MontanaWetlandRiparian_SHP.zip'
 }
 
 def main():
