@@ -32,7 +32,8 @@ def main():
                     r = requests.get(url)
                     z = zipfile.ZipFile(io.BytesIO(r.content))
                     z.extractall()
-                    print('Layer downloaded')
+                    file_name = url.split('/')
+                    print(f'{file_name[-1]} - Layer downloaded')
 
         except UnboundLocalError as e:
             print('Error - Incorrect input: %s' % e)
