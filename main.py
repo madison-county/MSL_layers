@@ -6,6 +6,7 @@ import os
 cwd = os.getcwd()
 
 MSDI_PATH = 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/'
+NON_MSDI_PATH = 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/NonMSDI/'
 
 url_dict = {
     '1' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/Cadastral/Parcels/Madison/Madison_GDB.zip',
