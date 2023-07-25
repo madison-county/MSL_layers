@@ -42,7 +42,7 @@ def main():
             print('General exception caught: %s' % e)
 
 def help_prompt():
-    print('1 for Parcel GDB\n2 for Parcel SHP\n3 For Hydrography SHP\n4 for GWIC Wells GBD\n5 for GWIC Wells SHP\nOr type "h" for help.\n(Ctrl + C to exit runtime.)\n')
+    print('1 for Parcel GDB\n2 for Parcel SHP\n3 For Hydrography SHP\n4 for GWIC Wells GBD\n5 for GWIC Wells SHP\n6 for 2021 NAIP Imagery\nOr type "h" for help.\n(Ctrl + C to exit runtime.)\n')
 
 if __name__ == '__main__':
     main()
