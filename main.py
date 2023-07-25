@@ -13,7 +13,7 @@ url_dict = {
     '5' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/NonMSDI/Wells/GWIC_wells.shp.zip',
     '6' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/Imagery/2021_NAIP/UTM_County_Mosaics/Madison.sid',
     '7' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/Wetlands/MontanaWetlandRiparian_GDB.zip',
-    '8' :     '7' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/Wetlands/MontanaWetlandRiparian_SHP.zip'
+    '8' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/Wetlands/MontanaWetlandRiparian_SHP.zip'
 }
 
 def main():
@@ -45,7 +45,7 @@ def main():
 
 def help_prompt():
     print('1 for Parcel GDB\n2 for Parcel SHP\n3 For Hydrography SHP\n4 for GWIC Wells GBD\n5 for GWIC Wells SHP\n6 for 2021 NAIP Imagery SID\
-            \nOr type "h" for help.\n(Ctrl + C to exit runtime.)\n')
+           \n7 for Wetland Riparian GDB\n8 For Wetland Riparian SHP\nOr type "h" for help.\n(Ctrl + C to exit runtime.)\n')
 
 if __name__ == '__main__':
     main()
