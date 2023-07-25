@@ -12,7 +12,8 @@ url_dict = {
     '4' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/NonMSDI/Wells/GWIC_wells.gdb.zip',
     '5' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/NonMSDI/Wells/GWIC_wells.shp.zip',
     '6' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/Imagery/2021_NAIP/UTM_County_Mosaics/Madison.sid',
-    '7' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/Wetlands/MontanaWetlandRiparian_GDB.zip'
+    '7' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/Wetlands/MontanaWetlandRiparian_GDB.zip',
+    '8' :     '7' : 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI/Wetlands/MontanaWetlandRiparian_SHP.zip'
 }
 
 def main():
