@@ -4,6 +4,7 @@ import io
 import os
 
 cwd = os.getcwd()
+layer_path = '/mnt/c/Users/jboyk/code_stuff/MSL_Data/'
 
 MSDI_PATH = 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/MSDI'
 NON_MSDI_PATH = 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/NonMSDI'
@@ -37,7 +38,7 @@ def main():
                     print('Retrieving Data Layer at: \n %s' % url)
                     r = requests.get(url)
                     z = zipfile.ZipFile(io.BytesIO(r.content))
-                    z.extractall()
+                    z.extractall(path=layer_path)
                     file_name = url.split('/')
                     print(f'{file_name[-1]} - Layer downloaded')
 
