@@ -17,7 +17,8 @@ url_dict = {
     '5' : f'{NON_MSDI_PATH}/Wells/GWIC_wells.shp.zip',
     '6' : f'{MSDI_PATH}/Imagery/2021_NAIP/UTM_County_Mosaics/Madison.sid',
     '7' : f'{MSDI_PATH}/Wetlands/MontanaWetlandRiparian_GDB.zip',
-    '8' : f'{MSDI_PATH}/Wetlands/MontanaWetlandRiparian_SHP.zip'
+    '8' : f'{MSDI_PATH}/Wetlands/MontanaWetlandRiparian_SHP.zip',
+    '9' : f'{MSDI_PATH}/Cadastral/ConservationEasements/MTConservationEasements_GDB.zip'
 }
 
 def main():
