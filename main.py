@@ -18,7 +18,8 @@ url_dict = {
     '6' : f'{MSDI_PATH}/Imagery/2021_NAIP/UTM_County_Mosaics/Madison.sid',
     '7' : f'{MSDI_PATH}/Wetlands/MontanaWetlandRiparian_GDB.zip',
     '8' : f'{MSDI_PATH}/Wetlands/MontanaWetlandRiparian_SHP.zip',
-    '9' : f'{MSDI_PATH}/Cadastral/ConservationEasements/MTConservationEasements_GDB.zip'
+    '9' : f'{MSDI_PATH}/Cadastral/ConservationEasements/MTConservationEasements_GDB.zip',
+    '10' : f'{MSDI_PATH}/Cadastral/ConservationEasements/MTConservationEasements_SHP.zip'
 }
 
 def main():
