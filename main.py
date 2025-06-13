@@ -12,7 +12,7 @@ NON_MSDI_PATH = 'https://ftpgeoinfo.msl.mt.gov/Data/Spatial/NonMSDI'
 url_dict = {
     '1' : f'{MSDI_PATH}/Cadastral/Parcels/Madison/Madison_GDB.zip',
     '2' : f'{MSDI_PATH}/Cadastral/Parcels/Madison/Madison_SHP.zip',
-    '3' : f'{MSDI_PATH}/Hydrography/NHDH_MT_Shape_20221025.zip',
+    '3' : f'{MSDI_PATH}/Hydrography/NHDH_MT_Shape_20231227.zip',
     '4' : f'{NON_MSDI_PATH}/Wells/GWIC_wells.gdb.zip',
     '5' : f'{NON_MSDI_PATH}/Wells/GWIC_wells.shp.zip',
     '6' : f'{MSDI_PATH}/Imagery/2021_NAIP/UTM_County_Mosaics/Madison.sid',
